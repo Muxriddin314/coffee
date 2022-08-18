@@ -17,13 +17,19 @@ body{
 }
 
 .container{
-    margin-left: 80px;
-    margin-right: 80px;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
 
 }
 
 /*Header*/
 
+.container-wrap {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 .site_header{
     display: flex;
     gap: 700.9px;
@@ -100,8 +106,10 @@ opacity: 0.8;
 }
 
 button{
-Width:217px;
-Height:56px;
+padding: 10px 30px;
+margin-left: auto;
+margin-right: auto;
+
 
 font-family: 'Fraunces 9pt';
 font-style: normal;
