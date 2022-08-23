@@ -1,52 +1,295 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:opsz,wght@9..144,900&display=swap');
-:root{
-    --main-color: #979797
+
+:root {
+  --main-color: #979797;
 }
 
-*{
-    list-style: none;
-    text-decoration: none; 
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-    font-style: barlow;
-    font-weight: 400;
+body {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  font-style: barlow;
+  font-weight: 400;
 }
 
-.container{
-    width: 1280px;
-    margin: 0 auto;
-    padding: 0 20px;
-
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /*Header*/
 
 .container-wrap {
-    width: 1280px;
-    margin: 0 auto;
-    padding: 0 20px;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-.site_header{
-    display: flex;
-    gap: 700.9px;
+.site__header {
+  display: flex;
+  gap: 700.9px;
+  margin: 44px 0 43px 0;
+}
 
+.site__logo {
+  width: 236px;
+  height: 26px;
+}
+.site__header ul {
+  display: flex;
+  gap: 33px;
+}
+.site__header a {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+
+  color: #83888f;
+}
+
+.site__header a:hover {
+  color: black;
+  transition: linear 2s;
+}
+
+/*Main*/
+.site-background__image {
+  background-image: url(/images/Bitmap.png);
+  background-size: cover;
+
+  width: calc(1280px-170px);
+  height: calc(600px-233px);
+  padding: 117px 85px 116px 85px;
+}
+
+.hero-text__block {
+  width: 493px;
+}
+
+.hero-text__block h1 {
+  margin-bottom: 32px;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+
+  color: #fefcf7;
+}
+
+.hero-text__block p {
+  margin-bottom: 56px;
+}
+
+.paragraph {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #fefcf7;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.hero-text__block button {
+  margin-bottom: 116px;
+}
+
+button {
+  
+  padding: 10px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+
+  text-align: center;
+
+  color: #fefcf7;
+  border: hidden;
+  background: #66d2cf;
+  border-radius: 6px;
+}
+
+/*Coffee collection*/
+
+.collection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 262px;
+  margin-bottom: 200px;
+}
+
+.collection div {
+  margin-left: 30px;
+}
+
+.coffee_name {
+  font-family: 'Fraunces 9pt';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+
+  text-align: center;
+
+  color: #333d4b;
+}
+
+.text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  text-align: center;
+
+  color: #333d4b;
+}
+
+/*Cards*/
+
+h2 {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+
+  text-align: center;
+
+  color: #fefcf7;
+}
+
+.center {
+  margin: 37px ;
+  
+  text-align: center;
+}
+
+.big__card {
+  width: 1180px;
+
+  position: relative;
+  border-radius: 6px;
+  background: #2c343e;
+  padding: 50px ;
+  box-sizing: border-box;
 }
 
 
-.site_logo{
-    width: 236px;
-    height: 26px;
+
+.card {
+  width: 350px;
+  background: #0e8784;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
-.site_header ul{
-    display: flex;
-    
+
+.card img {
+  padding: 72px 143px 56px 136px;
 }
-.site_header a{
-font-family: 'Barlow';
+
+.card__text {
+  padding: 48px;
+}
+
+.card__text .coffee_name {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+
+  text-align: center;
+
+  color: #fefcf7;
+}
+.card__block {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  bottom: -130px;
+}
+.text__section {
+  position: relative;
+}
+
+.text__section ul {
+  display: flex;
+  gap: 95px;
+  margin-top: 200px;
+}
+
+.text__block {
+  width: 285px;
+}
+
+.number {
+  font-family: 'Fraunces 9pt';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+
+  color: #fdd6ba;
+}
+
+.text__block h2 {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 38px;
+  margin-bottom: 42px;
+
+  color: #333d4b;
+}
+
+.text__block p {
+  margin-bottom: 64px;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  padding: 47px 85px;
+  margin-top: 200px;
+  width: 100%;
+  background-color: #2C343E;
+  box-sizing: border-box;
+}
+
+footer ul{
+  display: flex;
+  gap: 30px;
+}
+
+
+footer a{
+  font-family: 'Barlow';
 font-style: normal;
 font-weight: 700;
 font-size: 12px;
@@ -59,167 +302,217 @@ text-transform: uppercase;
 color: #83888F;
 }
 
-.site_header a:hover{
-    color: black;
-    transition: linear 2s;
-    
+.footer__link{
+  display: flex;
+  gap: 504px;
+ 
+  
 }
 
-/*Main*/
-
-
-.hero_text_block{
-    width: 30%;
-    position: absolute;
-    left: 165px;
-    top: 230px;
-   
-    
+footer h3{
+  margin-right: 103px ;
+  font-family: 'Fraunces';
+  color: #FEFCF7;
 }
 
-h1{
-font-family: 'Fraunces 9pt';
-font-style: normal;
-font-weight: 900;
-font-size: 72px;
-line-height: 72px;
-/* or 100% */
+/*Site Page*/
+.site-background{
+  background-image: url(/images/page_background.png);
+  background-size: cover;
 
-
-color: #FEFCF7;
-}
-
-.paragraph{
-font-family: 'Barlow';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-/* or 162% */
-
-
-color: #FEFCF7;
-
-mix-blend-mode: normal;
-opacity: 0.8;
+  width: calc(1280px-170px);
+  height: calc(600px-233px);
+  padding: 117px 85px 116px 85px;
 
 }
 
-button{
-padding: 10px 30px;
-margin-left: auto;
-margin-right: auto;
-
-
-font-family: 'Fraunces 9pt';
-font-style: normal;
-font-weight: 900;
-font-size: 18px;
-line-height: 25px;
-/* identical to box height, or 139% */
-
-text-align: center;
-
-color: #FEFCF7;
-
-background: #66D2CF;
-border-radius: 6px;
+.about{
+  display: flex;
 }
 
-/*Coffee collection*/
+.about__image{
+  width: 445px;
+  height: 520px;
+  border-radius: 5px;
+  margin: 168px 125px;
+}
 
-.collection{
-    display: flex;
-    justify-content: space-between ;
-    margin-top: 262px;
-    margin-bottom: 200px;
+.about-text__block{
+  
+}
+
+.about__title{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  
+  
+  color: #333D4B;
+}
+.about__center{
+  margin: 258px 0 32px 0;
+}
+
+.about-text__paragraph{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+
+  color: #333D4B;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.page__card{
+  padding: 86px 150px 0 86px; 
+  margin-top: 168px ;
+  position: relative;
+  width: 1280px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #2C343E;
+}
+
+.about-title__color{
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.page-card__paragraph{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+
+  color: #FEFCF7;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.guy{
+  position: absolute;
+width: 445px;
+height: 474px;
+left: 770px;
+top: -59px;
+border-radius: 5px;
 }
 
 
-.collection div{
-    margin-left: 30px;
+.country__list{
+  margin: 166px 230px 168px 165px;
 }
 
-
-.coffee_name{
-font-family: 'Fraunces 9pt';
-font-style: normal;
-font-weight: 900;
-font-size: 24px;
-line-height: 32px;
-/* identical to box height, or 133% */
-
-text-align: center;
-
-color: #333D4B;
+.country{
+  display: flex;
+  justify-content: space-between;
 }
 
-.text{
-font-family: 'Barlow';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-/* or 162% */
-
-text-align: center;
-
-color: #333D4B;
+.country__title{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  
+  color: #83888F;
 }
 
-/*Cards*/
+.country li{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
 
-h2{
-    font-family: 'Fraunces 9pt';
-font-style: normal;
-font-weight: 900;
-font-size: 40px;
-line-height: 48px;
-/* identical to box height, or 120% */
 
-text-align: center;
-
-color: #FEFCF7;
+  color: #333D4B;
 }
 
-.center{
-    margin: 37px 370px 86px 370px;
-    text-align: center;
+/*Subscribe page*/
+.subscribe__background{
+  background-image: url(/images/subscribe_background.png)
+  background-size: cover;
+  
 
 }
 
-.big_card{
- width: 1180px;
-height: 577px;
-border-radius: 6px;
-background: #2C343E;
+.subscribe-card__list{
+  display: flex;
+  gap: 95px;
 }
 
-.card{
-    width: 350px;
-    height: 382px;
-    position: absolute;
-left: 165px;
-top: 1920px;
-
-
-background: #0E8784;
-border-radius: 8px;
+.subscribe-list__card ul{
+  display: flex;
+  gap: 23px;
+ 
 }
 
-.card img{
-    margin: 72px 143px 56px 136px;
-
+.page__card h2{
+  color: #ffffff;
 }
 
-.card_text{
-    margin:0 48px 48px 47px;
+.page__card p{
+  color: #ffffff;
 }
-.card_block{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-   
+
+.card__grey{
+  padding: 32px 28px 84px;
+  box-sizing: border-box;
+  background-color: #F4F1EB;
+  width: 228px;
+  height: 250px;
+  border-radius: 8px;
 }
+.card__green{
+  padding: 32px 28px 84px;
+  box-sizing: border-box;
+  background-color: #0E8784;
+  width: 228px;
+  height: 250px;
+  border-radius: 8px;
+}
+
+/*Section*/
+.coffee__drink{
+  display: flex;
+  gap: 169px;
+  margin-top: 56px;
+}
+
+.coffee-drink__title{
+  margin-top: 168px;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+
+
+  color: #83888F;
+}
+
+.coffee__service li{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #333D4B;
+
+  border-bottom: 1px solid black;
+  
+}
+
+
